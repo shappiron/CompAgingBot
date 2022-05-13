@@ -3,7 +3,8 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 import time
 from tqdm.contrib.telegram import tqdm 
 import logging
-TOKEN = '5317967624:AAHmCMJ2iNkLXuPiPA2k6CylUuUj70PPUJs'
+
+TOKEN = input('Token:')
 
 updater = Updater(token=TOKEN, use_context=True)
 dispatcher = updater.dispatcher
